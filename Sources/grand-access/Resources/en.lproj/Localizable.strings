@@ -1,0 +1,5 @@
+//Scanning
+"not_now"="Not now";
+"scanner_needs_access"="Scanner needs access to the phone's camera";
+"need_access_to_contact_store"="Need access to the Contacts";
+"grant_access"="Please grant access in app settings";
