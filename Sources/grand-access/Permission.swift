@@ -8,6 +8,9 @@
 import AVFoundation
 import Contacts
 
+// Check and request permission for
+// - Camera
+// - Contacts
 public struct Permission {
     
     // MARK: - Contacts
