@@ -3,3 +3,5 @@
 "scanner_needs_access"="Scanner needs access to the phone's camera";
 "need_access_to_contact_store"="Need access to the Contacts";
 "grant_access"="Please grant access in app settings";
+"feature_is_not_available"="Feature is not available";
+"sign_in_with_apple_id"="Please sign in with your Apple ID";

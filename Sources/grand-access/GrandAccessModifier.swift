@@ -18,11 +18,20 @@ public struct GrandAccessModifier: ViewModifier {
     /// Binding to on\of alert
     @Binding var showingAlert : Bool
     
+    let url : URL?
+    
     // MARK: - Life circle
     
-    public init(title: LocalizedStringKey, message: LocalizedStringKey, showingAlert: Binding<Bool>) {
+    public init(
+        title: LocalizedStringKey,
+        message: LocalizedStringKey,
+        showingAlert: Binding<Bool>,
+        url : URL? = URL(string: UIApplication.openSettingsURLString)
+    ) {
+            
         self.title = title
         self.message = message
+        self.url = url
         self._showingAlert = showingAlert
     }
     
@@ -39,7 +48,7 @@ public struct GrandAccessModifier: ViewModifier {
     }
     
     private func onSettings(){
-        if let url = URL(string: UIApplication.openSettingsURLString) {
+        if let url = url {
             UIApplication.shared.open(url)
         }
     }
