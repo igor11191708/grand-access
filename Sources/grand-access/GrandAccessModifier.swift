@@ -27,8 +27,7 @@ public struct GrandAccessModifier: ViewModifier {
         message: LocalizedStringKey,
         showingAlert: Binding<Bool>,
         url : URL? = URL(string: UIApplication.openSettingsURLString)
-    ) {
-            
+    ) {            
         self.title = title
         self.message = message
         self.url = url
