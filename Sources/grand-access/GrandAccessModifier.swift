@@ -40,7 +40,7 @@ public struct GrandAccessModifier: ViewModifier {
                 .alert(isPresented: $showingAlert){
                     Alert(title: Text(title, bundle: .module),
                           primaryButton: .default(  Text("not_now", bundle: .module) , action: { }),
-                          secondaryButton: .default( Text("not_now", bundle: .module) , action: {onSettings()} )
+                          secondaryButton: .default( Text("not_now", bundle: .module) , action: { onSettings()} )
                     )
                 }
         }else{
