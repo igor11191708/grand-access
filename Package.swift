@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "grand-access",
     defaultLocalization: "ru",
-    platforms: [.iOS("15")],
+    platforms: [.iOS("14")],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(

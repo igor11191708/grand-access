@@ -35,15 +35,25 @@ public struct GrandAccessModifier: ViewModifier {
     }
     
     public func body(content: Content) -> some View {
-        content
-            .alert(Text(title, bundle: .module), isPresented: $showingAlert) {
-                Button(action: {}, label: {
-                    Text("not_now", bundle: .module) })
-                Button("settings", role: .none) { onSettings() }
-                    }
+        if #available(iOS 14.0, *) {
+            content
+                .alert(isPresented: $showingAlert){
+                    Alert(title: Text(title, bundle: .module),
+                          primaryButton: .default(  Text("not_now", bundle: .module) , action: { }),
+                          secondaryButton: .default( Text("not_now", bundle: .module) , action: {onSettings()} )
+                    )
+                }
+        }else{
+            content
+                .alert(Text(title, bundle: .module), isPresented: $showingAlert) {
+                    Button(action: {}, label: {
+                        Text("not_now", bundle: .module) })
+                    Button("settings", role: .none) { onSettings() }
+                }
             message: {
                 Text(message, bundle: .module)
             }
+        }
     }
     
     private func onSettings(){
