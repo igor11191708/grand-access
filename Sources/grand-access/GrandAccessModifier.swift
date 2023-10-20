@@ -35,12 +35,12 @@ public struct GrandAccessModifier: ViewModifier {
     }
     
     public func body(content: Content) -> some View {
-        if #available(iOS 14.0, *) {
+        if #unavailable(iOS 16.0) {
             content
                 .alert(isPresented: $showingAlert){
                     Alert(title: Text(title, bundle: .module),
                           primaryButton: .default(  Text("not_now", bundle: .module) , action: { }),
-                          secondaryButton: .default( Text("not_now", bundle: .module) , action: { onSettings()} )
+                          secondaryButton: .default( Text("settings", bundle: .module) , action: { onSettings()} )
                     )
                 }
         }else{
