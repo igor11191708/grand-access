@@ -140,7 +140,7 @@ import Contacts
 
 ### GrandAccessModifier
 
-| Var or Method   | Description                                                |
+| Var  | Description                                                |
 |-----------------|------------------------------------------------------------|
 | **title**       | The title of the alert.                                    |
 | **message**     | The main message of the alert.                             |
@@ -149,16 +149,16 @@ import Contacts
 
 ### Permission
 
-| Var or Method               | Description                                           |
-|-----------------------------|-------------------------------------------------------|
-| **isContactsGranted**       | Checks if contacts access is granted.                 |
-| **isCameraGranted**         | Checks if camera access is granted.                   |
-| **isMicrophoneGranted**     | Checks if microphone access is granted.               |
-| **isPhotoLibraryGranted**   | Checks if photo library access is granted.            |
-| **requestContactsAccess**   | Requests access to contacts (used internally).        |
-| **requestCameraAccess**     | Requests access to the camera (used internally).      |
-| **requestMicrophoneAccess** | Requests access to the microphone (used internally).  |
-| **requestPhotoLibraryAccess** | Requests access to the photo library (used internally). |
+| Var or Method                 | Description                                           | Access   |
+|-------------------------------|-------------------------------------------------------|----------|
+| **isContactsGranted**         | Checks if contacts access is granted.                 | public   |
+| **isCameraGranted**           | Checks if camera access is granted.                   | public   |
+| **isMicrophoneGranted**       | Checks if microphone access is granted.               | public   |
+| **isPhotoLibraryGranted**     | Checks if photo library access is granted.            | public   |
+| **requestContactsAccess**     | Requests access to contacts.        | internal |
+| **requestCameraAccess**       | Requests access to the camera.      | internal |
+| **requestMicrophoneAccess**   | Requests access to the microphone.  | internal |
+| **requestPhotoLibraryAccess** | Requests access to the photo library. | internal |
 
 ## License
 
