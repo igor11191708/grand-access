@@ -9,6 +9,12 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 
 ## Features
 
+### Request access for
+- [x] Camera
+- [x] Contacts
+- [x] Microphone
+- [x] Photo Library
+
 ### GrandAccessModifier
 - [x] Customizable Alert: Allows setting custom titles and messages for alerts.
 - [x] Settings Navigation: Provides a button to open the app’s settings directly from the alert.
