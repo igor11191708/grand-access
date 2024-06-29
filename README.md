@@ -5,6 +5,17 @@
 
 This project contains two main components: `GrandAccessModifier` and `Permission`. These components are designed to help manage permissions and display alerts within a SwiftUI application.
 
+## Features
+### GrandAccessModifier
+- [x] Customizable Alert:
+- [x] Allows setting custom titles and messages for alerts.
+- [x] Settings Navigation: Provides a button to open the app’s settings directly from the alert.
+- [x] Compatibility: Supports iOS 16 and earlier versions with appropriate alert handling.
+### Permission
+- [x] Asynchronous Permission Handling: Uses async/await for checking and requesting permissions.
+- [x] Comprehensive Permission Management: Handles permissions for both contacts and camera.
+- [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
+
 ### GrandAccessModifier
 
 `GrandAccessModifier` is a SwiftUI view modifier that presents an alert to the user, prompting them to change their app settings if necessary.
