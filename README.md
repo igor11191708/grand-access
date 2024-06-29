@@ -149,7 +149,7 @@ import Contacts
 
 ### Permission
 
-| Var or Method                 | Description                                           | Access   |
+| Method                 | Description                                           | Access   |
 |-------------------------------|-------------------------------------------------------|----------|
 | **isContactsGranted**         | Checks if contacts access is granted.                 | public   |
 | **isCameraGranted**           | Checks if camera access is granted.                   | public   |
