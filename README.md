@@ -19,6 +19,7 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 - [x] Comprehensive Permission Management: Handles permissions for both contacts and camera.
 - [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
 
+
  ![simulate locations](https://github.com/The-Igor/grand-access/blob/main/img/grand_access.gif)
 
 ### GrandAccessModifier
