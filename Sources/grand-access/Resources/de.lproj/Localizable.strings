@@ -1,0 +1,7 @@
+//Scanning
+"not_now"="Nicht jetzt";
+"scanner_needs_access"="Scanner benötigt Zugriff auf die Kamera des Telefons";
+"need_access_to_contact_store"="Benötigen Sie Zugriff auf die Kontakte";
+"grant_access"="Bitte gewähren Sie Zugriff in den App-Einstellungen";
+"feature_is_not_available"="Funktion ist nicht verfügbar";
+"sign_in_with_apple_id"="Bitte melden Sie sich mit Ihrer Apple ID an";
