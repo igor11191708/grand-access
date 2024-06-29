@@ -8,13 +8,12 @@
 import AVFoundation
 import Contacts
 
-// Check and request permission for
-// - Camera
-// - Contacts
+/// A utility struct for checking and requesting permissions for camera and contacts.
 public struct Permission {
     
     // MARK: - Contacts
     
+    /// Checks if contacts access is granted.
     public static var isContactsGranted : Bool{
          get async {
              switch CNContactStore.authorizationStatus(for: .contacts) {
@@ -25,6 +24,7 @@ public struct Permission {
          }
      }
     
+    /// Requests access to contacts.
     static var requestContactsAccess: Bool {
         get async{
             do{
@@ -37,6 +37,7 @@ public struct Permission {
     
     // MARK: - Camera
     
+    /// Checks if camera access is granted.
    public static var isCameraGranted : Bool{
         get async {
             switch AVCaptureDevice.authorizationStatus(for: .video) {
@@ -46,7 +47,8 @@ public struct Permission {
             }
         }
     }
-
+    
+    /// Requests access to the camera.
     static var requestCameraAccess: Bool {
         get async{
             await withCheckedContinuation{ continuation in
