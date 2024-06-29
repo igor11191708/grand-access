@@ -16,7 +16,7 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 
 ### Permission
 - [x] Asynchronous Permission Handling: Uses async/await for checking and requesting permissions.
-- [x] Comprehensive Permission Management: Handles permissions for both contacts and camera.
+- [x] Comprehensive Permission Management: Handles permissions for contacts, camera, mic and photo library.
 - [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
 
 
@@ -140,17 +140,25 @@ import Contacts
 
 ### GrandAccessModifier
 
-- **title**: The title of the alert.
-- **message**: The main message of the alert.
-- **showingAlert**: A binding to control the visibility of the alert.
-- **url**: The URL to open when the settings button is pressed. Defaults to the app settings URL.
+| Var or Method   | Description                                                |
+|-----------------|------------------------------------------------------------|
+| **title**       | The title of the alert.                                    |
+| **message**     | The main message of the alert.                             |
+| **showingAlert**| A binding to control the visibility of the alert.          |
+| **url**         | The URL to open when the settings button is pressed. Defaults to the app settings URL. |
 
 ### Permission
 
-- **isContactsGranted**: Checks if contacts access is granted.
-- **isCameraGranted**: Checks if camera access is granted.
-- **requestContactsAccess**: Requests access to contacts (used internally).
-- **requestCameraAccess**: Requests access to the camera (used internally).
+| Var or Method               | Description                                           |
+|-----------------------------|-------------------------------------------------------|
+| **isContactsGranted**       | Checks if contacts access is granted.                 |
+| **isCameraGranted**         | Checks if camera access is granted.                   |
+| **isMicrophoneGranted**     | Checks if microphone access is granted.               |
+| **isPhotoLibraryGranted**   | Checks if photo library access is granted.            |
+| **requestContactsAccess**   | Requests access to contacts (used internally).        |
+| **requestCameraAccess**     | Requests access to the camera (used internally).      |
+| **requestMicrophoneAccess** | Requests access to the microphone (used internally).  |
+| **requestPhotoLibraryAccess** | Requests access to the photo library (used internally). |
 
 ## License
 
