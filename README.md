@@ -5,7 +5,7 @@
 
 ## Overview
 
-This project contains two main components: `GrandAccessModifier` and `Permission`. These components are designed to help manage permissions and display alerts within a SwiftUI application.
+This package contains two main components: `GrandAccessModifier` and `Permission`. These components are designed to help manage permissions and display alerts within a SwiftUI application.
 
 ## Features
 ### GrandAccessModifier
