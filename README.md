@@ -124,18 +124,6 @@ struct PermissionView: View {
 }
 ```
 
-## Installation
-
-1. **Add Files to Your Project**: Copy the `GrandAccessModifier.swift` and `Permission.swift` files into your Xcode project.
-
-2. **Import Modules**: Ensure you import the necessary modules in your Swift files.
-
-```swift
-import SwiftUI
-import AVFoundation
-import Contacts
-```
-
 ## Documentation
 
 ### GrandAccessModifier
