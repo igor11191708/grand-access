@@ -71,6 +71,23 @@ struct ContentView: View {
 
 #### Example:
 
+#####  Permission Keys and Descriptions
+Add to Info.plist file to include the necessary permission descriptions:
+
+| NS Key | Key | Description |
+|--------|-----|-------------|
+| `NSCameraUsageDescription` | Privacy - Camera Usage Description| A string that describes why your app needs access to the camera. This is displayed in the permission dialog. |
+| `NSContactsUsageDescription` | Privacy - Contacts Usage Description| A string that explains why your app needs access to the user’s contacts. |
+| `NSMicrophoneUsageDescription` | Privacy - Microphone Usage Description| A string that details why your app requires access to the microphone. |
+| `NSPhotoLibraryUsageDescription` | Privacy - Photo Library Usage Description| A string that justifies why your app needs access to the photo library. |
+
+Example Descriptions:
+
+- **Camera**: "This app uses the camera to let you take photos to personalize your profile."
+- **Contacts**: "Access to contacts is used for quickly inviting your friends to join the app."
+- **Microphone**: "The microphone access is needed for voice chats in your conversations."
+- **Photo Library**: "This app accesses your photo library for uploading images to your account."
+
 ```swift
 
 import AVFoundation
