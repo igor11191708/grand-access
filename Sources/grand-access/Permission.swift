@@ -7,8 +7,9 @@
 
 import AVFoundation
 import Contacts
+import Photos
 
-/// A utility struct for checking and requesting permissions for camera and contacts.
+/// A utility struct for checking and requesting permissions for camera, contacts, and more
 public struct Permission {
     
     // MARK: - Contacts
@@ -58,4 +59,59 @@ public struct Permission {
             }
         }
     }
+    
+    // MARK: - Microphone
+    
+    /// Checks if microphone access is granted.
+    public static var isMicrophoneGranted: Bool {
+        get async {
+            switch AVAudioSession.sharedInstance().recordPermission {
+            case .granted:
+                return true
+            case .undetermined:
+                return await Permission.requestMicrophoneAccess
+            default:
+                return false
+            }
+        }
+    }
+    
+    /// Requests access to the microphone.
+    static var requestMicrophoneAccess: Bool {
+        get async {
+            await withCheckedContinuation { continuation in
+                AVAudioSession.sharedInstance().requestRecordPermission { granted in
+                    continuation.resume(returning: granted)
+                }
+            }
+        }
+    }
+    
+    // MARK: - Photo Library
+    
+    /// Checks if photo library access is granted.
+    public static var isPhotoLibraryGranted: Bool {
+        get async {
+            switch PHPhotoLibrary.authorizationStatus() {
+            case .authorized:
+                return true
+            case .notDetermined:
+                return await Permission.requestPhotoLibraryAccess
+            default:
+                return false
+            }
+        }
+    }
+    
+    /// Requests access to the photo library.
+    static var requestPhotoLibraryAccess: Bool {
+        get async {
+            await withCheckedContinuation { continuation in
+                PHPhotoLibrary.requestAuthorization { status in
+                    continuation.resume(returning: status == .authorized)
+                }
+            }
+        }
+    }
+
 }

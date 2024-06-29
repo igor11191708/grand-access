@@ -28,7 +28,11 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 
 ### Permission
 
-`Permission` is a utility struct that provides methods for checking and requesting permissions for accessing contacts and the camera.
+`Permission` is a utility struct that provides methods for checking and requesting permissions for accessing 
+    •    Camera
+    •    Contacts
+    •    Microphone
+    •    Photo Library
 
 ## Usage
 
@@ -68,6 +72,32 @@ struct ContentView: View {
 #### Example:
 
 ```swift
+
+import AVFoundation
+import Contacts
+import Photos
+
+// Check if contacts access is granted
+let isContactsGranted = await Permission.isContactsGranted
+
+// Request contacts access if not granted
+if !isContactsGranted {
+    let granted = await Permission.requestContactsAccess
+    if granted {
+        // Access granted
+    } else {
+        // Access denied
+    }
+}
+
+// Similarly, check and request access for Camera, Microphone, and Photo Library
+let isCameraGranted = await Permission.isCameraGranted
+let isMicrophoneGranted = await Permission.isMicrophoneGranted
+let isPhotoLibraryGranted = await Permission.isPhotoLibraryGranted
+```
+
+```swift
+
 import SwiftUI
 
 struct PermissionView: View {
