@@ -1,6 +1,8 @@
 
 # Grand access and Permission
 
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/The-Igor/grand-access) [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/The-Igor/grand-access)
+
 ## Overview
 
 This project contains two main components: `GrandAccessModifier` and `Permission`. These components are designed to help manage permissions and display alerts within a SwiftUI application.
@@ -15,6 +17,8 @@ This project contains two main components: `GrandAccessModifier` and `Permission
 - [x] Asynchronous Permission Handling: Uses async/await for checking and requesting permissions.
 - [x] Comprehensive Permission Management: Handles permissions for both contacts and camera.
 - [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
+
+ ![simulate locations](https://github.com/The-Igor/grand_access/blob/main/img/grand_access.gif)
 
 ### GrandAccessModifier
 
