@@ -1,5 +1,5 @@
 
-# GrandAccessModifier and Permission
+# Grand access and Permission
 
 ## Overview
 
