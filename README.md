@@ -8,6 +8,9 @@ So, while working on some projects, I kept running into designs that needed the 
 
 I’ve decided to separate certain permission-acquiring functionalities within my projects because each type of permission has its unique implementation requirements. I might even consider placing each of them in a separate package. I will think about this later based on practical experience.
 
+### Swiftui example
+The project demonstrating how to handle camera permissions in an iOS application. [here](https://github.com/The-Igor/permission-swift-example).
+
 ### CoreLocation
 Explore the [**Async location**](https://github.com/The-Igor/d3-async-location) repository on GitHub. It provides practical examples on how to set up and manage permissions for location services in iOS applications.
 
