@@ -3,8 +3,13 @@
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/The-Igor/grand-access) [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/The-Igor/grand-access)
 
-## Why ?!
+## Why ?! instead of a preface
 So, while working on some projects, I kept running into designs that needed the rights request functions to be in different visual components. Instead of copying and pasting the same code everywhere, I decided to streamline things by pulling that functionality into its own package.
+
+I’ve decided to separate certain permission-acquiring functionalities within my projects because each type of permission has its unique implementation requirements. I might even consider placing each of them in a separate package. I will think about this later based on practical experience.
+
+### CoreLocation
+Explore the [**Async location**](https://github.com/The-Igor/d3-async-location) repository on GitHub. It provides practical examples on how to set up and manage permissions for location services in iOS applications.
 
 ## Overview
 
@@ -174,12 +179,6 @@ struct PermissionView: View {
 | **requestMicrophoneAccess**   | Requests access to the microphone.  | internal |
 | **requestPhotoLibraryAccess** | Requests access to the photo library. | internal |
 
-
-## Permissions
-I’ve decided to separate certain permission-acquiring functionalities within my projects because some type of permission has its unique implementation requirements.
-
-### CoreLocation
-Explore the [**Async location**](https://github.com/The-Igor/d3-async-location) repository on GitHub. It provides practical examples on how to set up and manage permissions for location services in iOS applications.
 
 ## License
 
