@@ -10,6 +10,7 @@ import Contacts
 import Photos
 
 /// A utility struct for checking and requesting permissions for camera, contacts, and more
+@available(iOS 14.0, *)
 public struct Permission {
     
     // MARK: - Contacts
