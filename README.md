@@ -179,7 +179,7 @@ struct PermissionView: View {
 I’ve decided to separate certain permission-acquiring functionalities within my projects because each type of permission has its unique implementation challenges and requirements. This approach allows for more tailored handling of user permissions, ensuring that each is managed according to its specific context and needs.
 
 ### CoreLocation
-Explore the [**d3-async-location**](https://github.com/The-Igor/d3-async-location) repository on GitHub. It provides practical examples on how to set up and manage permissions for location services in iOS applications.
+Explore the [**Async location**](https://github.com/The-Igor/d3-async-location) repository on GitHub. It provides practical examples on how to set up and manage permissions for location services in iOS applications.
 
 ## License
 
