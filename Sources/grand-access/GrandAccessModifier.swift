@@ -4,8 +4,13 @@
 //  Created by Igor Shel on 13.07.2023.
 //
 
+#if canImport(SwiftUI)
 import SwiftUI
+#endif
+
+#if canImport(UIKit)
 import UIKit
+#endif
 
 /// Show grand access alert
 @available(iOS 14.0, *)

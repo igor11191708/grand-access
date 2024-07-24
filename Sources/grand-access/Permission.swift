@@ -5,9 +5,17 @@
 //  Created by Igor Shel on 13.07.2023.
 //
 
+#if canImport(AVFoundation)
 import AVFoundation
+#endif
+
+#if canImport(Contacts)
 import Contacts
+#endif
+
+#if canImport(Photos)
 import Photos
+#endif
 
 /// A utility struct for checking and requesting permissions for camera, contacts, and more
 @available(iOS 14.0, *)
