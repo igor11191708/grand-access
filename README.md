@@ -1,4 +1,3 @@
-
 # Grand access and Permission async/await
 
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/The-Igor/grand-access) [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FThe-Igor%2Fgrand-access%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/The-Igor/grand-access)
@@ -8,7 +7,7 @@ So, while working on some projects, I kept running into designs that needed the 
 
 I’ve decided to separate certain permission-acquiring functionalities within my projects because each type of permission has its unique implementation requirements. I might even consider placing each of them in a separate package. I will think about this later based on practical experience.
 
-### Swiftui example
+### SwiftUI example
 The project demonstrating how to handle camera permissions in an iOS application [here](https://github.com/The-Igor/permission-swift-example)
 
 ### CoreLocation
@@ -29,11 +28,11 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 ### GrandAccessModifier
 - [x] Customizable Alert: Allows setting custom titles and messages for alerts.
 - [x] Settings Navigation: Provides a button to open the app’s settings directly from the alert.
-- [x] Compatibility: Supports iOS 14 and later versions with appropriate alert handling.
+- [x] Compatibility: Supports iOS 14, macOS 11, tvOS 14, watchOS 7 and later versions with appropriate alert handling.
 
 ### Permission
 - [x] Asynchronous Permission Handling: Uses async/await for checking and requesting permissions.
-- [x] Comprehensive Permission Management: Handles permissions for contacts, camera, mic and photo library.
+- [x] Comprehensive Permission Management: Handles permissions for contacts, camera, mic, and photo library.
 - [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
 
 
@@ -45,11 +44,17 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 
 ### Permission
 
-`Permission` is a utility struct that provides methods for checking and requesting permissions for accessing 
-    •    Camera
-    •    Contacts
-    •    Microphone
-    •    Photo Library
+`Permission` is a utility struct that provides methods for checking and requesting permissions for accessing:
+- Camera (iOS, macOS, tvOS)
+- Contacts (iOS, macOS, watchOS)
+- Microphone (iOS, watchOS)
+- Photo Library (iOS, macOS, tvOS)
+
+#### Platform Availability
+- **Camera**: Supported on iOS, macOS, tvOS (tvOS 17.0+)
+- **Contacts**: Supported on iOS, macOS, watchOS
+- **Microphone**: Supported on iOS, watchOS
+- **Photo Library**: Supported on iOS, macOS, tvOS
 
 ## Usage
 
