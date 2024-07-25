@@ -20,10 +20,10 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 ## Features
 
 ### Request access for
-- [x] Camera
-- [x] Contacts
-- [x] Microphone
-- [x] Photo Library
+- **Camera**: iOS, macOS, tvOS (tvOS 17.0+)
+- **Contacts**: iOS, macOS, watchOS
+- **Microphone**: iOS, watchOS
+- **Photo Library**: iOS, macOS, tvOS
 
 ### GrandAccessModifier
 - [x] Customizable Alert: Allows setting custom titles and messages for alerts.
@@ -32,29 +32,10 @@ This package contains two main components: `GrandAccessModifier` and `Permission
 
 ### Permission
 - [x] Asynchronous Permission Handling: Uses async/await for checking and requesting permissions.
-- [x] Comprehensive Permission Management: Handles permissions for contacts, camera, mic, and photo library.
 - [x] Robust Error Handling: Includes basic error handling and logging for permission requests.
 
 
  ![simulate locations](https://github.com/The-Igor/grand-access/blob/main/img/grand_access.gif)
-
-### GrandAccessModifier
-
-`GrandAccessModifier` is a SwiftUI view modifier that presents an alert to the user, prompting them to change their app settings if necessary.
-
-### Permission
-
-`Permission` is a utility struct that provides methods for checking and requesting permissions for accessing:
-- Camera (iOS, macOS, tvOS)
-- Contacts (iOS, macOS, watchOS)
-- Microphone (iOS, watchOS)
-- Photo Library (iOS, macOS, tvOS)
-
-#### Platform Availability
-- **Camera**: Supported on iOS, macOS, tvOS (tvOS 17.0+)
-- **Contacts**: Supported on iOS, macOS, watchOS
-- **Microphone**: Supported on iOS, watchOS
-- **Photo Library**: Supported on iOS, macOS, tvOS
 
 ## Usage
 
